@@ -1,0 +1,12 @@
+# Devlopment Plabook for Working with the Invati Management Center API
+# This play book is to create a Deployment group
+- name: Check if you can connect (GET) to ap age and it returns a status 200
+  uri:
+    url: http://CA01A2940
+
+# Check that a page ruturns a statys 200 
+- uri:
+    url:  http://CA01A2940
+    return_content: yes
+  register: webpage
+  
